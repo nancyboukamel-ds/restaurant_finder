@@ -538,28 +538,6 @@ lsof -ti:5173 | xargs kill -9
 npm run dev -- --port 3000
 ```
 
----
-### Development Workflow
-
-1. **Fork the repository**
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/amazing-feature
-   ```
-3. **Make your changes**
-4. **Run tests**
-   ```bash
-   npm test
-   ```
-5. **Commit with descriptive message**
-   ```bash
-   git commit -m "Add amazing feature"
-   ```
-6. **Push to your fork**
-   ```bash
-   git push origin feature/amazing-feature
-   ```
-7. **Open a Pull Request**
 
 ### Code Style
 
