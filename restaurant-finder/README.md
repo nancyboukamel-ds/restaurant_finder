@@ -90,7 +90,7 @@
  
 ### Test Coverage
 ![Test Results](./src/images/tests.png)
-*21 passing tests demonstrating comprehensive test coverage*
+*26 passing tests demonstrating comprehensive test coverage*
 
 
 ## 🎬 Demo
