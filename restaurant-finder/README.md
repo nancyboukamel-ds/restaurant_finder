@@ -6,30 +6,34 @@
 
 ## 📖 Table of Contents
 
-- [Overview](#-overview)
-- [Features](#-features)
+- [Overview](#overview)
+- [Features](#features)
   - [Core Functionality](#core-functionality)
   - [Technical Features](#technical-features)
-- [Screenshots](#-screenshots)
-- [Demo](#-demo)
-- [Technology Stack](#️-technology-stack)
+- [Screenshots](#screenshots)
+- [Demo](#demo)
+  - [Search Flow](#search-flow)
+  - [Example Postcodes to Try](#example-postcodes-to-try)
+- [Detailed Test Documentation](#detailed-test-documentation)
+  - [Test Summary](#test-summary)
+- [Technology Stack](#technology-stack)
   - [Frontend](#frontend)
   - [Backend](#backend)
-- [Prerequisites](#-prerequisites)
-- [Installation](#-installation)
-- [Usage](#-usage)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Start the Application](#start-the-application)
+  - [Alternative: Start Servers Separately](#alternative-start-servers-separately)
+  - [Search for Restaurants](#search-for-restaurants)
 - [Project Structure](#-project-structure)
-- [API Documentation](#-api-documentation)
-- [Testing](#-testing)
+- [API Documentation](#api-documentation)
+  - [Just Eat Takeaway API](#just-eat-takeaway-api)
+- [Testing](#testing)
+  - [Run All Tests](#run-all-tests)
+  - [Test Structure](#test-structure)
   - [Test Coverage](#test-coverage)
   - [Example Test](#example-test)
-- [Architecture Decisions](#️-architecture-decisions)
-- [Future Enhancements](#-future-enhancements)
-  - [Planned Features](#planned-features)
-  - [Technical Improvements](#technical-improvements)
-- [Troubleshooting](#-troubleshooting)
-- [Development Workflow](#development-workflow)
-- [Code Style](#code-style)
+- [Architecture Decisions](#architecture-decisions)
 
 ---
 
@@ -115,6 +119,26 @@
 - **B1 1AA** - Birmingham
 
 ---
+## Detailed Test Documentation
+
+**For complete test case documentation, specifications, and examples, see [TESTS.md](./TESTS.md)**
+
+The TESTS.md file includes:
+- Detailed test case descriptions
+- Expected results for each test
+- Code examples
+- Test naming conventions
+- Quality metrics
+- Future testing roadmap
+
+### Test Summary
+
+- **26 tests passing** (100% pass rate)
+- **98% code coverage**
+- **1.51s execution time**
+- **6 test files**
+
+---
 
 ## Technology Stack
 
@@ -160,7 +184,7 @@ npm --version   # Should be v9.0.0+
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/restaurant-finder.git
+git clone https://github.com/nancyboukamel-ds/restaurant-finder.git
 cd restaurant-finder
 ```
 
@@ -256,7 +280,7 @@ For a detailed breakdown, see [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md).
 
 ---
 
-## 🔌 API Documentation
+## API Documentation
 
 ### Just Eat Takeaway API
 
@@ -446,5 +470,11 @@ describe('SearchBar', () => {
 
 ---
 
+<div align="center">
+**Built with ❤️ for Just Eat Takeaway Early Careers Program**
+ 
+⭐ Star this repo if you found it helpful!
+ 
+</div>
 
 
