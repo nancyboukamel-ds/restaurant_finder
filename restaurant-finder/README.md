@@ -3,25 +3,40 @@
 > A full-stack TypeScript application for discovering restaurants in the UK using the Just Eat Takeaway API
 
 ---
+# 🍕 Restaurant Finder
+
+> A full-stack TypeScript application for discovering restaurants in the UK using the Just Eat Takeaway API
+
+---
 
 ## 📖 Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [Demo](#demo)
-- [Technology Stack](#technology-stack)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Project Structure](#project-structure)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Architecture Decisions](#architecture-decisions)
-- [Future Enhancements](#future-enhancements)
-- [Troubleshooting](#troubleshooting)
-- [Contributing](#contributing)
-- [License](#license)
+- [Overview](#-overview)
+- [Features](#-features)
+  - [Core Functionality](#core-functionality)
+  - [Technical Features](#technical-features)
+- [Screenshots](#-screenshots)
+- [Demo](#-demo)
+- [Technology Stack](#️-technology-stack)
+  - [Frontend](#frontend)
+  - [Backend](#backend)
+- [Prerequisites](#-prerequisites)
+- [Installation](#-installation)
+- [Usage](#-usage)
+- [Project Structure](#-project-structure)
+- [API Documentation](#-api-documentation)
+- [Testing](#-testing)
+  - [Test Coverage](#test-coverage)
+  - [Example Test](#example-test)
+- [Architecture Decisions](#️-architecture-decisions)
+- [Future Enhancements](#-future-enhancements)
+  - [Planned Features](#planned-features)
+  - [Technical Improvements](#technical-improvements)
+- [Troubleshooting](#-troubleshooting)
+- [Development Workflow](#development-workflow)
+- [Code Style](#code-style)
 
+---
 ---
 
 ## 🎯 Overview
