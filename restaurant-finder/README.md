@@ -33,7 +33,7 @@
 
 ---
 
-## 🎯 Overview
+## Overview
 
 **Restaurant Finder** is a responsive web application that helps users discover restaurants in their area by searching UK postcodes. Built for the **Just Eat Takeaway Early Careers Program**, this project demonstrates proficiency in modern web development practices, TypeScript, React, and full-stack integration.
 
@@ -48,29 +48,29 @@
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Functionality
 
-- 🔍 **Postcode Search**: Search for restaurants by UK postcode (e.g., "EC4M 7RF")
-- 🍔 **Restaurant Display**: View top 10 restaurants with ratings, cuisines, and addresses
-- 🏷️ **Cuisine Filtering**: Filter by multiple cuisines (Pizza, Indian, Chinese, etc.)
-- ⭐ **Rating Filter**: Filter by minimum star rating (0-5 stars)
-- 🔄 **Real-time Updates**: Instant UI updates when applying/removing filters
-- 📱 **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
+- **Postcode Search**: Search for restaurants by UK postcode (e.g., "EC4M 7RF")
+- **Restaurant Display**: View top 10 restaurants with ratings, cuisines, and addresses
+- **Cuisine Filtering**: Filter by multiple cuisines (Pizza, Indian, Chinese, etc.)
+- **Rating Filter**: Filter by minimum star rating (0-5 stars)
+- **Real-time Updates**: Instant UI updates when applying/removing filters
+- **Responsive Design**: Works seamlessly on desktop, tablet, and mobile
 
 ### Technical Features
 
-- ⚡ **Fast Performance**: Vite-powered development and optimized production builds
-- 🛡️ **Type Safety**: Full TypeScript coverage prevents runtime errors
-- 🧪 **Well-Tested**: 21 passing unit tests with Vitest
-- 🎨 **Modern UI**: Tailwind CSS utility-first styling
-- 🔐 **CORS Solution**: Backend proxy server for secure API communication
-- 📊 **Smart Filtering**: OR logic for cuisines, sorted by rating
+- **Fast Performance**: Vite-powered development and optimized production builds
+- **Type Safety**: Full TypeScript coverage prevents runtime errors
+- **Well-Tested**: 21 passing unit tests with Vitest
+- **Modern UI**: Tailwind CSS utility-first styling
+- **CORS Solution**: Backend proxy server for secure API communication
+- **Smart Filtering**: OR logic for cuisines, sorted by rating
 
 ---
 
-## 📸 Screenshots
+## Screenshots
  
 ### Initial Empty State
 ![Empty Search State](./src/images/empty_search.png)
@@ -93,7 +93,7 @@
 *26 passing tests demonstrating comprehensive test coverage*
 
 
-## 🎬 Demo
+## Demo
 
 ### Search Flow
 
@@ -116,7 +116,7 @@
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Frontend
 
@@ -138,7 +138,7 @@
 
 ---
 
-## 📋 Prerequisites
+## Prerequisites
 
 Before you begin, ensure you have the following installed:
 
@@ -155,7 +155,7 @@ npm --version   # Should be v9.0.0+
 
 ---
 
-## 🚀 Installation
+## Installation
 
 ### 1. Clone the Repository
 
@@ -186,7 +186,7 @@ You should see:
 
 ---
 
-## 💻 Usage
+## Usage
 
 ### Start the Application
 
@@ -215,10 +215,6 @@ npm run server
 2. Enter a UK postcode (e.g., "EC4M 7RF")
 3. Click "Search" or press Enter
 4. Browse the results and apply filters as needed
-
-### Stop the Application
-
-Press `Ctrl + C` in the terminal to stop both servers.
 
 ---
 
@@ -334,14 +330,12 @@ interface Restaurant {
   rating: number;             // 4.5
   ratingCount: number;        // 532
   address: string;            // "123 High Street, London, EC4M 7RF"
-  latitude?: number;          // 51.531169
-  longitude?: number;         // -0.08123
 }
 ```
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Run All Tests
 
@@ -384,7 +378,7 @@ src/
 | **Components** | 100% |
 | **Services** | 95% |
 | **Utils** | 100% |
-| **Overall** | 21 passing tests |
+| **Overall** | 26 passing tests |
 
 ### Example Test
 
@@ -407,7 +401,7 @@ describe('SearchBar', () => {
 
 ---
 
-## 🏛️ Architecture Decisions
+## Architecture Decisions
 
 ### 1. Backend Proxy Server
 
@@ -452,37 +446,7 @@ describe('SearchBar', () => {
 
 ---
 
-## 🚧 Future Enhancements
-
-### Planned Features
-
-- [ ] **Map Integration**: Show restaurants on a map with markers
-- [ ] **Distance Sorting**: Sort by distance from postcode
-- [ ] **Opening Hours**: Display current open/closed status
-- [ ] **Menu Preview**: Show sample menu items
-- [ ] **Favorites**: Save favorite restaurants to localStorage
-- [ ] **Share Results**: Generate shareable link with filters
-- [ ] **Pagination**: Load more than 10 results
-- [ ] **Restaurant Details**: Click card for full details modal
-- [ ] **Price Range Filter**: Filter by £, ££, £££, ££££
-- [ ] **Dietary Options**: Filter by vegetarian, vegan, gluten-free
-- [ ] **Delivery Time**: Show estimated delivery times
-- [ ] **User Reviews**: Display user reviews and ratings
-
-### Technical Improvements
-
-- [ ] **Caching**: Cache API responses for faster repeat searches
-- [ ] **PWA**: Convert to Progressive Web App for offline support
-- [ ] **E2E Tests**: Add Playwright or Cypress tests
-- [ ] **Performance**: Implement virtual scrolling for large lists
-- [ ] **Accessibility**: Add ARIA labels and keyboard navigation
-- [ ] **Analytics**: Track search patterns and popular filters
-- [ ] **Error Tracking**: Integrate Sentry for production errors
-- [ ] **CI/CD**: GitHub Actions for automated testing and deployment
-
----
-
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Issue: "Cannot connect to backend"
 
@@ -497,63 +461,5 @@ pkill -f "node.*server.js"
 npm start
 ```
 
-### Issue: Tests Failing
-
-**Cause**: Dependency version mismatch  
-**Solution**:
-
-```bash
-# Clean install
-rm -rf node_modules package-lock.json
-npm install
-npm test
-```
-
-### Issue: "Network Error" when searching
-
-**Cause**: Just Eat API rate limiting or network issues  
-**Solution**:
-- Wait a few seconds and try again
-- Check your internet connection
-- Try a different postcode
-
-### Issue: No restaurants found
-
-**Cause**: Invalid UK postcode or area with no coverage  
-**Solution**:
-- Try a major city postcode (e.g., "EC4M 7RF" for London)
-- Verify postcode format (e.g., "SW1A 1AA")
-- Check that the postcode is in the UK
-
-### Issue: Port 5173 already in use
-
-**Cause**: Another Vite process running  
-**Solution**:
-
-```bash
-# Kill process on port 5173
-lsof -ti:5173 | xargs kill -9
-
-# Or use different port
-npm run dev -- --port 3000
-```
 
 
-### Code Style
-
-- Follow existing TypeScript patterns
-- Use functional components with hooks
-- Write tests for new features
-- Keep components small and focused
-- Use Tailwind CSS for styling
-- Run ESLint before committing
-
----
-
-<div align="center">
-
-**Built with ❤️ for Just Eat Takeaway Early Careers Program**
-
-⭐ Star this repo if you found it helpful!
-
-</div>
