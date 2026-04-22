@@ -3,11 +3,6 @@
 > A full-stack TypeScript application for discovering restaurants in the UK using the Just Eat Takeaway API
 
 ---
-# 🍕 Restaurant Finder
-
-> A full-stack TypeScript application for discovering restaurants in the UK using the Just Eat Takeaway API
-
----
 
 ## 📖 Table of Contents
 
@@ -36,7 +31,6 @@
 - [Development Workflow](#development-workflow)
 - [Code Style](#code-style)
 
----
 ---
 
 ## 🎯 Overview
