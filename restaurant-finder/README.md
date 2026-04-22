@@ -4,7 +4,7 @@
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 - [Overview](#overview)
 - [Features](#features)
@@ -242,7 +242,7 @@ npm run server
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 restaurant-finder/
