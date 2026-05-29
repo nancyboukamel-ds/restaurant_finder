@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { fetchRestaurantByPostcode } from '../restaurantApi';
+import { fetchRestaurantByPostcode } from '../../services/restaurantApi';
 
 describe('restaurantApi', () => {
   it('should validate postcode format', async () => {
