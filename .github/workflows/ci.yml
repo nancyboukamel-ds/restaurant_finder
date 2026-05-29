@@ -1,0 +1,50 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Get the code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: restaurant-finder/package-lock.json
+
+      # Step 3: Install dependencies
+      - name: Install dependencies
+        working-directory: restaurant-finder
+        run: npm ci
+
+      # Step 4: TypeScript check
+      - name: TypeScript check
+        working-directory: restaurant-finder
+        run: npm run build
+
+      # Step 5: Run ESLint
+      - name: Run ESLint
+        working-directory: restaurant-finder
+        run: npm run lint
+
+      # Step 6: Run tests
+      - name: Run tests
+        working-directory: restaurant-finder
+        run: npm run test:run
+
+      # Step 7: Run tests with coverage
+      - name: Run tests with coverage
+        working-directory: restaurant-finder
+        run: npm run coverage
