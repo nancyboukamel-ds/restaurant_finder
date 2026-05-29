@@ -14,7 +14,7 @@ export interface FilterState {
   minRating: number;
 }
 
-export function Filters({ allRestaurants, apiFilters, onFilterChange }: FiltersProps) {
+export function Filters({apiFilters, onFilterChange }: FiltersProps) {
   const [selectedCuisines, setSelectedCuisines] = useState<string[]>([]);
   const [minRating, setMinRating] = useState(0);
 
